@@ -14,6 +14,9 @@
 		A670FA802027D04700A5EA8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A670FA7E2027D04700A5EA8D /* LaunchScreen.storyboard */; };
 		A670FA8B2027D04700A5EA8D /* MurrayMakingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A670FA8A2027D04700A5EA8D /* MurrayMakingTests.swift */; };
 		A670FA962027D04700A5EA8D /* MurrayMakingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A670FA952027D04700A5EA8D /* MurrayMakingUITests.swift */; };
+		A670FAA42027D27400A5EA8D /* MurrayCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A670FAA32027D27400A5EA8D /* MurrayCollectionViewController.swift */; };
+		A670FAA62027D28600A5EA8D /* MurrayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A670FAA52027D28600A5EA8D /* MurrayCollectionViewCell.swift */; };
+		A670FAA82027D2AF00A5EA8D /* MurrayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A670FAA72027D2AF00A5EA8D /* MurrayViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		A670FA912027D04700A5EA8D /* MurrayMakingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MurrayMakingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A670FA952027D04700A5EA8D /* MurrayMakingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MurrayMakingUITests.swift; sourceTree = "<group>"; };
 		A670FA972027D04700A5EA8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A670FAA32027D27400A5EA8D /* MurrayCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MurrayCollectionViewController.swift; sourceTree = "<group>"; };
+		A670FAA52027D28600A5EA8D /* MurrayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MurrayCollectionViewCell.swift; sourceTree = "<group>"; };
+		A670FAA72027D2AF00A5EA8D /* MurrayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MurrayViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,9 @@
 			isa = PBXGroup;
 			children = (
 				A670FA752027D04700A5EA8D /* AppDelegate.swift */,
+				A670FAA32027D27400A5EA8D /* MurrayCollectionViewController.swift */,
+				A670FAA52027D28600A5EA8D /* MurrayCollectionViewCell.swift */,
+				A670FAA72027D2AF00A5EA8D /* MurrayViewController.swift */,
 				A670FA772027D04700A5EA8D /* ViewController.swift */,
 				A670FA792027D04700A5EA8D /* Main.storyboard */,
 				A670FA7C2027D04700A5EA8D /* Assets.xcassets */,
@@ -259,8 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A670FAA62027D28600A5EA8D /* MurrayCollectionViewCell.swift in Sources */,
 				A670FA782027D04700A5EA8D /* ViewController.swift in Sources */,
 				A670FA762027D04700A5EA8D /* AppDelegate.swift in Sources */,
+				A670FAA42027D27400A5EA8D /* MurrayCollectionViewController.swift in Sources */,
+				A670FAA82027D2AF00A5EA8D /* MurrayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +439,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Q67G7E28V;
 				INFOPLIST_FILE = MurrayMaking/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kateowens.MurrayMaking;
@@ -441,6 +454,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Q67G7E28V;
 				INFOPLIST_FILE = MurrayMaking/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kateowens.MurrayMaking;
