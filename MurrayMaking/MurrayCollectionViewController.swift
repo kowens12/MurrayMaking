@@ -16,25 +16,12 @@ class MurrayCollectionViewController: UICollectionViewController {
     var murrays: [UIImage] = []
     var murrayCollectionViewCell: MurrayCollectionViewCell!
     var selectedMurray: UIImage = UIImage()
-    var murrayDictionary = [String: UIImage]()
+    var murrayDictionary: [String: UIImage] = [String: UIImage]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-    }
-
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -60,8 +47,9 @@ class MurrayCollectionViewController: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         selectedMurray = murrays[indexPath.item]
-        murrayDictionary = (newMurray: selectedMurray)
+        murrayDictionary = ["murrayNotification": selectedMurray]
         
-        
+        NotificationCenter.default.post(name: murrayNotification, object: nil, userInfo: murrayDictionary)
+        self.navigationController?.popToRootViewController(animated: true)
     }
 }

@@ -11,10 +11,14 @@ import UIKit
 class MurrayViewController: UIViewController {
 
     @IBOutlet var userImageView: UIImageView? = UIImageView()
+    @IBOutlet var murrayImageView: UIImageView? = UIImageView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
 
-   
-
+    func setMurray(notification: Notification) {
+        
+    }
 }
