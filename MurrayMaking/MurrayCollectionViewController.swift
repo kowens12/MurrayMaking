@@ -15,6 +15,8 @@ class MurrayCollectionViewController: UICollectionViewController {
 
     var murrays: [UIImage] = []
     var murrayCollectionViewCell: MurrayCollectionViewCell!
+    var selectedMurray: UIImage = UIImage()
+    var murrayDictionary = [String: UIImage]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,7 +48,6 @@ class MurrayCollectionViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
     
-    
         return cell
     }
     
@@ -55,5 +56,12 @@ class MurrayCollectionViewController: UICollectionViewController {
         
         let murrayImage = murrays[indexPath.row]
         murrayCollectionViewCell.murrayImageView.image = murrayImage
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        selectedMurray = murrays[indexPath.item]
+        murrayDictionary = (newMurray: selectedMurray)
+        
+        
     }
 }
